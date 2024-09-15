@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import HoverButton from "@/components/hover_button";
+import HoverIconButton from "@/components/hover_icon_button";
+import { FaInstagram, FaGithub } from 'react-icons/fa'; 
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +31,38 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <>
+       <div className="flex space-x-4 justify-between p-4">
+       <HoverButton
+        text="Hover Me"
+        // onClick={() => {
+        //   alert('Button Clicked');
+        // }}
+      />
+       
+
+       <div className="flex">
+      {/* Instagram Button with custom gradient */}
+      <HoverIconButton 
+        icon={<FaInstagram size={24} />} 
+        href="https://www.instagram.com/shyam.exe/" 
+        fromColor="pink-500" 
+        toColor="yellow-500" 
+      />
+      
+      {/* GitHub Button with different custom gradient */}
+      <HoverIconButton 
+        icon={<FaGithub size={24} />} 
+        href="https://github.com/shyamexe" 
+        fromColor="gray-800" 
+        toColor="black" 
+      /> 
+    </div>
+
+
+       </div>
         {children}
+        </>
       </body>
     </html>
   );
