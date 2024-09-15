@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import HoverButton from "@/components/hover_button";
+import AppBarButton from "@/components/app_bar_button";
 import HoverIconButton from "@/components/hover_icon_button";
-import { FaInstagram, FaGithub } from 'react-icons/fa'; 
+import { FaInstagram, FaGithub } from 'react-icons/fa';
+import Starfield from 'react-starfield';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
+
   children: React.ReactNode;
 }>) {
   return (
@@ -32,36 +34,39 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <>
-       <div className="flex space-x-4 justify-between p-4">
-       <HoverButton
-        text="Hover Me"
-        // onClick={() => {
-        //   alert('Button Clicked');
-        // }}
-      />
-       
-
-       <div className="flex">
-      {/* Instagram Button with custom gradient */}
-      <HoverIconButton 
-        icon={<FaInstagram size={24} />} 
-        href="https://www.instagram.com/shyam.exe/" 
-        fromColor="pink-500" 
-        toColor="yellow-500" 
-      />
-      
-      {/* GitHub Button with different custom gradient */}
-      <HoverIconButton 
-        icon={<FaGithub size={24} />} 
-        href="https://github.com/shyamexe" 
-        fromColor="gray-800" 
-        toColor="black" 
-      /> 
-    </div>
+          <Starfield
+            starCount={1000}
+            starColor={[255, 255, 255]}
+            speedFactor={0.05}
+            backgroundColor="black"
+          />
+          <div className="flex space-x-4 justify-between p-4">
+            <AppBarButton 
+            
+            />
 
 
-       </div>
-        {children}
+            <div className="flex">
+              {/* Instagram Button with custom gradient */}
+              <HoverIconButton
+                icon={<FaInstagram size={24} />}
+                href="https://www.instagram.com/shyam.exe/"
+                fromColor="pink-500"
+                toColor="yellow-500"
+              />
+
+              {/* GitHub Button with different custom gradient */}
+              <HoverIconButton
+                icon={<FaGithub size={24} />}
+                href="https://github.com/shyamexe"
+                fromColor="gray-800"
+                toColor="black"
+              />
+            </div>
+
+
+          </div>
+          {children}
         </>
       </body>
     </html>

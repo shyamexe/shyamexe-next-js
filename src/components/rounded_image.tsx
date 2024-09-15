@@ -8,11 +8,16 @@ interface RoundedImageProps {
   height: number;
   borderRadius?: string; // Optional border radius
 }
-
 const RoundedImage: React.FC<RoundedImageProps> = ({ src, alt, width, height, borderRadius = 'rounded-lg' }) => {
   return (
-    <div className={`overflow-hidden ${borderRadius}`}>
-      <Image src={src} alt={alt} width={width} height={height} className="object-cover w-full h-full" />
+    <div className={`overflow-hidden ${borderRadius}`} style={{ width: `${width}px`, height: `${height}px` }}>
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="object-cover w-full h-full "
+      />
     </div>
   );
 };
