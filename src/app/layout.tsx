@@ -5,6 +5,7 @@ import AppBarButton from "@/components/app_bar_button";
 import HoverIconButton from "@/components/hover_icon_button";
 import { FaInstagram, FaGithub } from 'react-icons/fa';
 import Starfield from 'react-starfield';
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,8 +42,8 @@ export default function RootLayout({
             backgroundColor="black"
           />
           <div className="flex space-x-4 justify-between p-4">
-            <AppBarButton 
-            
+            <AppBarButton
+
             />
 
 
@@ -67,6 +68,17 @@ export default function RootLayout({
 
           </div>
           {children}
+          <div className="flex justify-end px-5 py-3 items-center">
+            <span className="text-sm px-5">Say Hi!</span>
+            
+            <Link
+              href="mailto:shyamjith38@hotmail.com"
+              // href="/path-to-your-file.pdf" 
+              // download 
+              className="bg-gray-800 text-white hover:text-[#393E46] px-4 py-2 rounded-full hover:bg-[#EEEEEE]  transition-colors duration-300 ease-in-out">
+              Reach out
+            </Link>
+          </div>
         </>
       </body>
     </html>

@@ -39,8 +39,8 @@ export default function Home() {
           titleColor={"slate-300"}
           tagBgColor={"black"}
           tagTextColor={"white"}
-          gradient1={"black"}
-          gradient2={"red-900"}
+          gradient1={"#000000"}
+          gradient2={"#991b1b"}
           path={"/about"} />
       </div>
       <div>
@@ -52,25 +52,25 @@ export default function Home() {
           imageHeight={800}
           device={"iPhone X"}
           titleColor={"white"}
-          tagBgColor={"black"}
+          tagBgColor={"#25316D"}
           tagTextColor={"white"}
-          gradient1={"[#A7BFE8]"}
-          gradient2={"[#6190E8]"}
+          gradient1={"#25316D"}
+          gradient2={"#5F6F94"}
           path={"/about"} />
       </div>
       <div>
         <ProjectCard
-          title="Scrollable_tab_view package (flutter)"
+          title="Scrollable_tab_view package"
           tags={["Android","IOS","Linux","Macos","Web","Windows"]}
           imageSrc={"/package.png"}
-          imageWidth={400}
+          imageWidth={600}
           imageHeight={600}
           device={"iPhone X"}
           titleColor={"white"}
-          tagBgColor={"black"}
+          tagBgColor={"#2E0249"}
           tagTextColor={"white"}
-          gradient1={"[#A7BFE8]"}
-          gradient2={"[#6190E8]"}
+          gradient1={"#2E0249"}
+          gradient2={"#570A57"}
           path={"/about"} />
       </div>
       <div>
@@ -82,10 +82,10 @@ export default function Home() {
           imageHeight={600}
           device={"iPhone X"}
           titleColor={"white"}
-          tagBgColor={"black"}
+          tagBgColor={"#001E6C"}
           tagTextColor={"white"}
-          gradient1={"[#A7BFE8]"}
-          gradient2={"[#6190E8]"}
+          gradient1={"#001E6C"}
+          gradient2={"#00B4D8"}
           path={"/about"} />
       </div>
       <div>
@@ -97,10 +97,10 @@ export default function Home() {
           imageHeight={600}
           device={"iPhone X"}
           titleColor={"white"}
-          tagBgColor={"black"}
+          tagBgColor={"#223376"}
           tagTextColor={"white"}
-          gradient1={"[#A7BFE8]"}
-          gradient2={"[#6190E8]"}
+          gradient1={"#223376"}
+          gradient2={"#0d0e29"}
           path={"/about"} />
       </div>
       <div>
@@ -112,12 +112,13 @@ export default function Home() {
           imageHeight={600}
           device={"iPhone X"}
           titleColor={"white"}
-          tagBgColor={"black"}
+          tagBgColor={"#440A67"}
           tagTextColor={"white"}
-          gradient1={"[#A7BFE8]"}
-          gradient2={"[#6190E8]"}
+          gradient1={"#440A67"}
+          gradient2={"#93329E"}
           path={"/about"} />
       </div>
+      <div className="h-[40px]"></div>
 
 
 
