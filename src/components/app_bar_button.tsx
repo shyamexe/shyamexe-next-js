@@ -3,16 +3,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
-const navLinks = [
-  { name: "About", href: "/about" },
-
-];
-
-// type HoverButtonProps = {
-//   text: string;
-//   onClick?: () => void;
-// };
-
 const AppBarButton = () => {
   const pathname = usePathname();
   const buttonName = pathname == '/' ? "About" : "Back To Main"
@@ -26,8 +16,7 @@ const AppBarButton = () => {
 
 
     >
-      {buttonName}
-      {/* {text} */}
+      {buttonName} 
     </Link>
 
 

@@ -1,7 +1,6 @@
 import ProjectCard from "@/components/project_card";
 import RoundedImage from "@/components/rounded_image";
-import TypeWriterText from "@/components/type_writer_text";
-import Image from "next/image";
+import TypeWriterText from "@/components/type_writer_text"; 
 export default function Home() {
   return (
     <div >
@@ -16,7 +15,7 @@ export default function Home() {
           />
 
           <div className="flex flex-col   justify-evenly  ">
-            <h1 className="text-2xl font-sans sm:text-4xl font-normal">Hi i'm Shyam Jith</h1>
+            <h1 className="text-2xl font-sans sm:text-4xl font-normal">Hi i'm Shyam Jith {/* eslint-disable-line react/no-unescaped-entities */}</h1>
             <div className="flex">
 
               <h1 className="text-2xl font-sans sm:text-4xl font-normal pr-3">{"I create"} </h1>
@@ -34,8 +33,7 @@ export default function Home() {
           tags={["Android"]}
           imageSrc={"/securedoc.png"}
           imageWidth={300}
-          imageHeight={800}
-          device={"iPhone X"}
+          imageHeight={800} 
           titleColor={"slate-300"}
           tagBgColor={"black"}
           tagTextColor={"white"}
@@ -49,8 +47,7 @@ export default function Home() {
           tags={["Reusable code Blocks"]}
           imageSrc={"/cli.png"}
           imageWidth={300}
-          imageHeight={800}
-          device={"iPhone X"}
+          imageHeight={800} 
           titleColor={"white"}
           tagBgColor={"#25316D"}
           tagTextColor={"white"}
@@ -64,8 +61,7 @@ export default function Home() {
           tags={["Android","IOS","Linux","Macos","Web","Windows"]}
           imageSrc={"/package.png"}
           imageWidth={600}
-          imageHeight={600}
-          device={"iPhone X"}
+          imageHeight={600} 
           titleColor={"white"}
           tagBgColor={"#2E0249"}
           tagTextColor={"white"}
@@ -79,8 +75,7 @@ export default function Home() {
           tags={["Android","IOS", "Web",]}
           imageSrc={"/dictionary_ss.png"}
           imageWidth={400}
-          imageHeight={600}
-          device={"iPhone X"}
+          imageHeight={600} 
           titleColor={"white"}
           tagBgColor={"#001E6C"}
           tagTextColor={"white"}
@@ -94,8 +89,7 @@ export default function Home() {
           tags={[  "Web",]}
           imageSrc={"/ecoms.png"}
           imageWidth={400}
-          imageHeight={600}
-          device={"iPhone X"}
+          imageHeight={600} 
           titleColor={"white"}
           tagBgColor={"#223376"}
           tagTextColor={"white"}
@@ -109,8 +103,7 @@ export default function Home() {
           tags={[  "android","ios"]}
           imageSrc={"/wether.png"}
           imageWidth={400}
-          imageHeight={600}
-          device={"iPhone X"}
+          imageHeight={600} 
           titleColor={"white"}
           tagBgColor={"#440A67"}
           tagTextColor={"white"}

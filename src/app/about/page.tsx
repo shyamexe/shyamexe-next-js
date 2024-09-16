@@ -19,7 +19,7 @@ export default function AboutPage() {
                         key={1}
                         className="px-2 py-1 text-lg sm:text-xl rounded text-center sm:text-left"
                     >
-                        Hello there! I'm Shyamjith, a passionate Flutter developer hailing from the picturesque land of Kerala, India. With a background in computer science engineering, I thrive on turning innovative ideas into delightful digital experiences.
+                        Hello there! I'm Shyamjith, a passionate Flutter developer hailing from the picturesque land of Kerala, India. With a background in computer science engineering, I thrive on turning innovative ideas into delightful digital experiences.{/* eslint-disable-line react/no-unescaped-entities */}
                     </span>
                 </div>
 
@@ -33,6 +33,7 @@ export default function AboutPage() {
                     
                     Thank you for visiting my portfolio. Let's create amazing experiences together.
                     "
+                    
                 />
                 <div className="flex space-x-4 justify-center">
                     {/* Reach Out Button */}
