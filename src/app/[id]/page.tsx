@@ -1,6 +1,5 @@
 import ExternalLink from '@/components/project_link_card'
 import { items } from './data'
-import Link from 'next/link'
 
 export default function ItemPage({ params }: { params: { id: string } }) {
   const item = items.find(item => item.id === params.id)
