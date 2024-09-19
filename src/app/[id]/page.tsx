@@ -1,15 +1,13 @@
 import ExternalLink from '@/components/project_link_card'
 import { items } from './data'
-import { Metadata, ResolvingMetadata } from 'next'
+import { Metadata } from 'next'
 
 type Props = {
   params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
+  { params }: Props, 
 ): Promise<Metadata> {
   const id = params.id
   const item = items.find(item => item.id === id)
