@@ -9,7 +9,7 @@ type ProjectCardProps = {
     tags: string[],
     imageSrc: string,
     imageWidth: number,
-    imageHeight: number, 
+    imageHeight: number,
     titleColor: string,
     tagBgColor: string,
     tagTextColor: string,
@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     tags,
     imageSrc,
     imageWidth,
-    imageHeight, 
+    imageHeight,
     titleColor,
     tagBgColor,
     tagTextColor,
@@ -36,25 +36,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 
     return (
-        <Link
-            key={path}
-            href={path}>
-            <div className="flex justify-center items-center  pt-10 px-2">
+
+        <div className="flex justify-center items-center  pt-10 px-2">
 
 
 
-                <div
-                    // className={`relative max-w-[1020px] h-[350px] p-6 rounded-3xl bg-gradient-to-r from-[#A7BFE8] to-[#6190e8] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full`}
-                    // className={`relative max-w-[1020px] h-[350px] p-6 rounded-3xl bg-gradient-to-r from-${gradient1} to-${gradient2} overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full`}
 
-                    className="relative max-w-[1020px] h-[400px] p-6 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full"
-                    style={{
-                        background: `linear-gradient(to bottom, ${gradient1}, ${gradient2})` // Gradient applied via inline styles
-                    }}
 
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                >
+            <div
+                // className={`relative max-w-[1020px] h-[350px] p-6 rounded-3xl bg-gradient-to-r from-[#A7BFE8] to-[#6190e8] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full`}
+                // className={`relative max-w-[1020px] h-[350px] p-6 rounded-3xl bg-gradient-to-r from-${gradient1} to-${gradient2} overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full`}
+
+                className="relative max-w-[1020px] h-[400px] p-6 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out w-full"
+                style={{
+                    background: `linear-gradient(to bottom, ${gradient1}, ${gradient2})` // Gradient applied via inline styles
+                }}
+
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                <Link
+                    key={path}
+                    href={path}>
                     {/* Static title and subtitle */}
                     <div className="absolute bottom-4 left-4 z-20 align-bottom">
                         {/* <span className="inline-block px-3 py-1 mb-2 text-sm font-medium text-white bg-gray-700 rounded-full">
@@ -102,9 +105,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     {/* Gradient background */}
                     {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#E86190]  z-15"></div> */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black mt-40 opacity-70 z-15"></div>
-                </div>
+                </Link>
             </div>
-        </Link>
+        </div>
     );
 };
 
