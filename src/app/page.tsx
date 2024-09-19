@@ -39,7 +39,7 @@ export default function Home() {
           tagTextColor={"white"}
           gradient1={"#000000"}
           gradient2={"#991b1b"}
-          path={"/about"} />
+          path={"/secureDocs"} />
       </div>
       <div>
         <ProjectCard
@@ -53,8 +53,22 @@ export default function Home() {
           tagTextColor={"white"}
           gradient1={"#25316D"}
           gradient2={"#5F6F94"}
-          path={"/about"} />
+          path={"/bricks"} />
       </div>
+      {/* <div>
+        <ProjectCard
+          title="Material Pagination"
+          tags={["Android","IOS","Linux","Macos","Web","Windows"]}
+          imageSrc={"/cli.png"}
+          imageWidth={300}
+          imageHeight={800} 
+          titleColor={"white"}
+          tagBgColor={"#25316D"}
+          tagTextColor={"white"}
+          gradient1={"#25316D"}
+          gradient2={"#5F6F94"}
+          path={"/mPagination"} />
+      </div> */}
       <div>
         <ProjectCard
           title="Scrollable_tab_view package"
@@ -67,7 +81,7 @@ export default function Home() {
           tagTextColor={"white"}
           gradient1={"#2E0249"}
           gradient2={"#570A57"}
-          path={"/about"} />
+          path={"/scrollableTabBar"} />
       </div>
       <div>
         <ProjectCard
@@ -81,7 +95,7 @@ export default function Home() {
           tagTextColor={"white"}
           gradient1={"#001E6C"}
           gradient2={"#00B4D8"}
-          path={"/about"} />
+          path={"/dictionary"} />
       </div>
       <div>
         <ProjectCard
@@ -95,7 +109,7 @@ export default function Home() {
           tagTextColor={"white"}
           gradient1={"#223376"}
           gradient2={"#0d0e29"}
-          path={"/about"} />
+          path={"/eCommerce"} />
       </div>
       <div>
         <ProjectCard
@@ -109,7 +123,7 @@ export default function Home() {
           tagTextColor={"white"}
           gradient1={"#440A67"}
           gradient2={"#93329E"}
-          path={"/about"} />
+          path={"/weather"} />
       </div>
       <div className="h-[40px]"></div>
 
