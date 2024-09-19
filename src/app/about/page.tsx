@@ -1,6 +1,12 @@
 import DescriptionComponent from "@/components/description_component";
 import RoundedImage from "@/components/rounded_image";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "About | Shyamjith.in",
+    description: "I'm a Software Engineer specializing in Flutter development from India 🇮🇳. I love building beautiful, responsive, and performant mobile and web applications",
+  };
+  
 export default function AboutPage() {
     return (
         <>
