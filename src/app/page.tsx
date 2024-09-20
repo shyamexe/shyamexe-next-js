@@ -55,20 +55,20 @@ export default function Home() {
           gradient2={"#5F6F94"}
           path={"/bricks"} />
       </div>
-      {/* <div>
+        <div>
         <ProjectCard
           title="Material Pagination"
           tags={["Android","IOS","Linux","Macos","Web","Windows"]}
-          imageSrc={"/cli.png"}
-          imageWidth={300}
+          imageSrc={"/mpagination.png"}
+          imageWidth={600}
           imageHeight={800} 
           titleColor={"white"}
-          tagBgColor={"#25316D"}
+          tagBgColor={"#092635"}
           tagTextColor={"white"}
-          gradient1={"#25316D"}
-          gradient2={"#5F6F94"}
+          gradient1={"#092635"}
+          gradient2={"#5C8374"}
           path={"/mPagination"} />
-      </div> */}
+      </div>  
       <div>
         <ProjectCard
           title="Scrollable_tab_view package"
