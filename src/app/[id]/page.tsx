@@ -1,6 +1,7 @@
 import ExternalLink from '@/components/project_link_card'
 import { items } from './data'
 import { Metadata } from 'next'
+import MarkdownRenderer from '@/components/markdown_renderer'
 
 type Props = {
   params: { id: string }
@@ -65,6 +66,9 @@ export default function ItemPage({ params }: { params: { id: string } }) {
       </div> 
       <div className="border-t border-gray-600 my-10"></div>
       <div className="max-w-[900px] mx-auto items-center space-y-4 sm:space-y-0 sm:space-x-10 px-4">
+      <div className="container mx-auto p-4">
+      <MarkdownRenderer content={item.md} />
+    </div>
       </div>
     </>
   )
