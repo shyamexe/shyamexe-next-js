@@ -1,14 +1,14 @@
 import ExternalLink from '@/components/project_link_card'
 import { items } from './data'
 import { Metadata } from 'next'
-import MarkdownRenderer from '@/components/markdown_renderer'
+import MarkdownRenderer from '@/components/markdown_renderer' 
 
 type Props = {
   params: { id: string }
 }
 
 export async function generateMetadata(
-  { params }: Props, 
+  { params }: Props,
 ): Promise<Metadata> {
   const id = params.id
   const item = items.find(item => item.id === id)
@@ -63,13 +63,22 @@ export default function ItemPage({ params }: { params: { id: string } }) {
           externalLink={item.link}
           buttonName="View site"
         />
-      </div> 
+      </div>
       <div className="border-t border-gray-600 my-10"></div>
       <div className="max-w-[900px] mx-auto items-center space-y-4 sm:space-y-0 sm:space-x-10 px-4">
-      <div className="container mx-auto p-4">
-      <MarkdownRenderer content={item.md} />
-      
-    </div>
+        <div className="container mx-auto p-4">
+          <MarkdownRenderer content={item.md} />
+
+        </div>
+
+        <div className="flex justify-center items-center p-10">
+          <a
+            href="/"
+            className="bg-gray-800 text-white hover:text-[#393E46] px-4 py-2 rounded-full hover:bg-[#EEEEEE]  transition-colors duration-300 ease-in-out"
+          >
+            Back to Home
+          </a>
+        </div>
 
       </div>
     </>

@@ -23,7 +23,7 @@ export default function AboutPage() {
                     </div> 
                     <span
                         key={1}
-                        className="px-2 py-1 text-lg sm:text-xl rounded text-center sm:text-left"
+                        className="px-10 py-6 text-lg sm:text-xl rounded text-center sm:text-left"
                     >
                         Hello there! I'm Shyamjith, a passionate Flutter developer hailing from the picturesque land of Kerala, India. With a background in computer science engineering, I thrive on turning innovative ideas into delightful digital experiences.{/* eslint-disable-line react/no-unescaped-entities */}
                     </span>
