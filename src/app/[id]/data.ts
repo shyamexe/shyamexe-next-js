@@ -7,8 +7,7 @@ export const items = [
     link: "https://play.google.com/store/apps/details?id=com.shyamexe.securedocs",
     tag: "@playstore",
     img:"/github.png",
-    md:`
-    # SecureDocs Manager: Easily Organize and Manage Your Files, Offline
+    md:`# SecureDocs Manager: Easily Organize and Manage Your Files, Offline
 
 ### SecureDocs Manager is the most secure and convenient way to store and manage your files, offline. With SecureDocs Manager, you can:
 
@@ -61,8 +60,7 @@ samples, guidance on mobile development, and a full API reference.
     link: "https://github.com/shyamexe/bricks-cli",
     tag:"@github",
     img:"/github.png",
-    md:`
-    # Mason bricks 🧱
+    md:`# Mason bricks 🧱
 
 [Mason](https://pub.dev/packages/mason_cli) reusable bricks for efficient project scaffolding.
 
@@ -161,11 +159,8 @@ mason make cubit -o ..\Yoru\output\folder\  --name counter --style equatable
     link: "https://pub.dev/packages/scrollable_tab_view",
     tag:"@pub.dev",
     img:"/dart.png",
-    md:`
-    # scrollable_tab_view
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+    md:`# scrollable_tab_view 
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-) 
 [![pub package](https://img.shields.io/pub/v/scrollable_tab_view.svg)](https://pub.dartlang.org/packages/scrollable_tab_view)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -174,9 +169,7 @@ This Flutter package provides a vertical scrollable tab bar widget that allows y
 ### Demo
 
 
-
-<IMG height="400px" src="https://github.com/shyamexe/scrollable_tab_view/assets/93277108/7ffe8424-097a-4b4c-8d8d-1dc62ce93448"></IMG>
-
+ ![Image 3](https://github.com/shyamexe/scrollable_tab_view/assets/93277108/7ffe8424-097a-4b4c-8d8d-1dc62ce93448) 
 
 ## Installation
 
@@ -260,29 +253,9 @@ Column(
 ),
 \`\`\`
 
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://shyamjith.in"><img src="https://avatars.githubusercontent.com/u/93277108?v=4?s=100" width="100px;" alt="Shyamjith"/><br /><sub><b>Shyamjith</b></sub></a><br /><a href="https://github.com/shyamexe/scrollable_tab_view/commits?author=shyamexe" title="Code">💻</a> <a href="https://github.com/shyamexe/scrollable_tab_view/commits?author=shyamexe" title="Documentation">📖</a> <a href="#projectManagement-shyamexe" title="Project Management">📆</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sukekyo000"><img src="https://avatars.githubusercontent.com/u/100392635?v=4?s=100" width="100px;" alt="k-kawasaki"/><br /><sub><b>k-kawasaki</b></sub></a><br /><a href="https://github.com/shyamexe/scrollable_tab_view/commits?author=sukekyo000" title="Code">💻</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-    `
+   
+`
   },
   {
     id: "dictionary",
@@ -292,8 +265,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
     link:"https://github.com/shyamexe/Dictionary_app_flutter_using_bloc",
     tag:"@github",
     img:"/github.png",
-    md:`
-    ## About
+    md:`## About
 
 This is a dictionary app built with flutter using the bloc pattern. It uses the Dictionary API and Datamuse API to fetch data. The app has features like audio pronunciation, synonyms, antonyms, examples and share options. It also has a dark mode feature.
 
@@ -318,22 +290,8 @@ This is a dictionary app built with flutter using the bloc pattern. It uses the 
 
 ## Screenshots
 
-<table>
-  <td>
-   <img src="https://user-images.githubusercontent.com/93277108/215252832-4c97c09a-cfa0-451d-bec7-9f0067f860c1.gif">
-  </td>
-  <td>
-   <img src="https://user-images.githubusercontent.com/93277108/215252874-d6b902b8-9ace-41ac-947b-8c2b00e58d68.gif">
-  </td>
-  <td>
-   <img src="https://user-images.githubusercontent.com/93277108/215252936-a8b7cfe8-65c3-4822-97e0-807ebc22bb85.gif">
-  </td>
-  <td>
-   <img src="https://user-images.githubusercontent.com/93277108/215252979-613061ba-0738-4322-8898-184c4f5b1578.gif">
-  </td>
-  
-  
-</table>
+![Image 1](https://user-images.githubusercontent.com/93277108/215252832-4c97c09a-cfa0-451d-bec7-9f0067f860c1.gif) ![Image 2](https://user-images.githubusercontent.com/93277108/215252874-d6b902b8-9ace-41ac-947b-8c2b00e58d68.gif) ![Image 3](https://user-images.githubusercontent.com/93277108/215252936-a8b7cfe8-65c3-4822-97e0-807ebc22bb85.gif) ![Image 4](https://user-images.githubusercontent.com/93277108/215252979-613061ba-0738-4322-8898-184c4f5b1578.gif)
+
 
 ## Getting Started
 
@@ -426,8 +384,7 @@ otp 123456
     link:"https://github.com/shyamexe/weather_app",
     tag:"@github",
     img:"/github.png",
-    md:`
-    # Weather App
+    md:`# Weather App
 
 This is a simple weather app built with Flutter that displays the current weather for a given location. The app uses the weatherapi.com API to fetch the weather data and displays it in a user-friendly interface.
 
@@ -455,15 +412,10 @@ samples, guidance on mobile development, and a full API reference.
 
 Here are some screenshots of the app:
 
-<table>
-    <td>
-    <img src="https://user-images.githubusercontent.com/93277108/232668646-1d177a6f-c0f4-47ad-8c0c-173428c43e4c.png" alt="screenshot 1">
-    </td>
-    <td>
-    <img src="https://user-images.githubusercontent.com/93277108/232668971-ff4092fa-a807-4539-ac73-d6b1d70171dc.png" alt="screenshot 2">
-    </td>
-</table>
 
+
+![screenshot 1](https://user-images.githubusercontent.com/93277108/232668646-1d177a6f-c0f4-47ad-8c0c-173428c43e4c.png)
+![screenshot 2](https://user-images.githubusercontent.com/93277108/232668971-ff4092fa-a807-4539-ac73-d6b1d70171dc.png)
 
 ## Assets
 
@@ -492,8 +444,7 @@ apps](https://flutter.dev/docs/development/accessibility-and-localization/intern
     tag:"@pub.dev",
     link:"https://pub.dev/packages/material_pagination",
     img:"/dart.png",
-    md:`
-    # Material Pagination
+    md:`# Material Pagination
 
 [![Pub Version](https://img.shields.io/pub/v/material_pagination.svg)](https://pub.dev/packages/material_pagination)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/shyamexe/material_pagination/main.yml)](https://github.com/shyamexe/material_pagination/actions)
@@ -501,20 +452,11 @@ apps](https://flutter.dev/docs/development/accessibility-and-localization/intern
 MaterialPagination is a customizable and flexible pagination widget for Flutter applications. It allows you to easily create pagination controls with numbered page buttons, next/previous arrows, and extensive customization options.
 
 ## Screenshots
-
-<div align="center"> 
-<table>
-  <td>
-   <img src="https://raw.githubusercontent.com/shyamexe/material_pagination/master/screenshots/1.png">
-  </td> 
-  <td>
-   <img src="https://raw.githubusercontent.com/shyamexe/material_pagination/master/screenshots/image.png">
-  </td>
-  <td>
-   <img src="https://raw.githubusercontent.com/shyamexe/material_pagination/master/screenshots/3.png">
-  </td>
-</table>                                                                           
-</div>
+ 
+  ![Image 1](https://raw.githubusercontent.com/shyamexe/material_pagination/master/screenshots/1.png)
+  ![Image 2](https://raw.githubusercontent.com/shyamexe/material_pagination/master/screenshots/image.png)
+  ![Image 3](https://raw.githubusercontent.com/shyamexe/material_pagination/master/screenshots/3.png)
+ 
 
 ## Features
 

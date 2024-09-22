@@ -61,7 +61,7 @@ export default function Home() {
           tags={["Android","IOS","Linux","Macos","Web","Windows"]}
           imageSrc={"/mpagination.png"}
           imageWidth={600}
-          imageHeight={800} 
+          imageHeight={400} 
           titleColor={"white"}
           tagBgColor={"#092635"}
           tagTextColor={"white"}

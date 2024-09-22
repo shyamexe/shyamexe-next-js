@@ -7,8 +7,12 @@ interface MarkdownRendererProps {
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
   return (
-    <div className="prose prose-lg max-w-none">
-      <ReactMarkdown>{content}</ReactMarkdown>
+    // <div className="prose prose-lg max-w-none dark: ">
+    <div className="prose prose-lg max-w-none prose-invert bg-black text-white">
+      <ReactMarkdown
+      
+      
+      >{content}</ReactMarkdown>
     </div>
   );
 };

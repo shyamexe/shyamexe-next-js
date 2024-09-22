@@ -68,7 +68,9 @@ export default function ItemPage({ params }: { params: { id: string } }) {
       <div className="max-w-[900px] mx-auto items-center space-y-4 sm:space-y-0 sm:space-x-10 px-4">
       <div className="container mx-auto p-4">
       <MarkdownRenderer content={item.md} />
+      
     </div>
+
       </div>
     </>
   )
