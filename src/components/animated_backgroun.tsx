@@ -36,6 +36,7 @@
 
 // export default AnimatedBackground;
 
+
 import { useState, useEffect } from "react";
 
 interface BackgroundAnimationProps {
@@ -70,16 +71,18 @@ const BackgroundAnimation: React.FC<BackgroundAnimationProps> = ({ imageUrl }) =
 
   return (
     <div
-     className="fixed inset-0" 
+      className="fixed inset-0"
       style={{
+        marginTop:-500,
+        marginLeft:-100,
+        marginRight:-100,
         backgroundImage: `url(${imageUrl})`,
-        // backgroundSize: "120%", // Zoomed background to avoid blank spaces
-        backgroundPosition: "center top", // Keep image at the top center to avoid blank space on top
+        backgroundSize: "cover", // Ensure image covers entire width and height
+        backgroundPosition: "center", // Keep the background centered
         backgroundRepeat: "no-repeat",
-        
-        transform: `translate(${mouseX * 10}px, ${Math.max(0, mouseY * 30 + scrollY * 0.05)}px)`, // Vertical scroll animation reduced
-        transition: "transform 0.1s ease-out", // Smooth transition
-        opacity: 0.20, // 20% opacity for transparency
+        transform: `translate(${mouseX * 15}px, ${Math.max(0, mouseY * 30 + scrollY * 0.05)}px)`, // Adjust transform values for smoother animation
+        transition: "transform 0.1s ease-out", // Smooth transition for movement
+        // opacity: 0.80, // 20% opacity for transparency
         zIndex: -1, // Behind content
       }}
     ></div>

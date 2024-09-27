@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <>
-        <BackgroundAnimation imageUrl="/bg.jpg" />
+        <BackgroundAnimation imageUrl="/bg.png" />
           <Starfield
             starCount={1000}
             starColor={[255, 255, 255]}
