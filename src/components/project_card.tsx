@@ -174,7 +174,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         start: "top 80%", // Start when the card is 80% from the top of the viewport
                         end: "bottom 80%",
                         toggleActions: "play none none reverse",
-                        scrub: 4, // Smooth animation tied to scroll
+                        scrub: 1, // Smooth animation tied to scroll
                     },
                 }
             );
@@ -192,7 +192,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         trigger: cardRef.current, // Use the card as the trigger
                         start: "top 80%", // Start zoom when the card is 80% from the top
                         end: "bottom 20%", // Finish zooming at this point
-                        scrub: 6, // Smooth zoom based on scroll
+                        scrub: 3, // Smooth zoom based on scroll
                     },
                 }
             );
