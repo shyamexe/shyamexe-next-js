@@ -1,6 +1,5 @@
 import CenteredImageWithBackground from "@/components/about/centered_image";
 import DescriptionComponent from "@/components/description_component";
-import RoundedImage from "@/components/rounded_image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
