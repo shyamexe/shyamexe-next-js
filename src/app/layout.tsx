@@ -6,6 +6,7 @@ import HoverIconButton from "@/components/hover_icon_button";
 import { FaInstagram, FaGithub } from 'react-icons/fa';
 import Starfield from 'react-starfield';
 import Link from "next/link";
+import BackgroundAnimation from "@/components/animated_backgroun";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <>
-        {/* <BackgroundAnimation imageUrl="/bg.jpg" /> */}
+        <BackgroundAnimation imageUrl="/bg.jpg" />
           <Starfield
             starCount={1000}
             starColor={[255, 255, 255]}
