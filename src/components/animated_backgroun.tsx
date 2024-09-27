@@ -73,9 +73,9 @@ const BackgroundAnimation: React.FC<BackgroundAnimationProps> = ({ imageUrl }) =
     <div
       className="fixed inset-0"
       style={{
-        marginTop:-500,
-        marginLeft:-100,
-        marginRight:-100,
+        marginTop:-250,
+        marginLeft:-40,
+        marginRight:-40,
         backgroundImage: `url(${imageUrl})`,
         backgroundSize: "cover", // Ensure image covers entire width and height
         backgroundPosition: "center", // Keep the background centered
