@@ -1,3 +1,4 @@
+import CenteredImageWithBackground from "@/components/about/centered_image";
 import DescriptionComponent from "@/components/description_component";
 import RoundedImage from "@/components/rounded_image";
 import { Metadata } from "next";
@@ -5,15 +6,20 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "About | Shyamjith.in",
     description: "I'm a Software Engineer specializing in Flutter development from India 🇮🇳. I love building beautiful, responsive, and performant mobile and web applications",
-  };
-  
+};
+
 export default function AboutPage() {
     return (
         <>
             <div className="max-w-[900px] mx-auto items-center space-y-4 sm:space-y-0 sm:space-x-10 px-4">
-                
-                <div className=" flex flex-col sm:flex-row items-center">
-                    <div className="w-[300px]">
+                <div className="flex justify-center">
+                    <CenteredImageWithBackground
+
+                        
+                    />
+                </div>
+                {/* <div className=" flex flex-col sm:flex-row items-center"> */}
+                    {/* <div className="w-[300px]">
                         <RoundedImage
                             src="/user.jpg"
                             alt="A rounded image"
@@ -21,14 +27,14 @@ export default function AboutPage() {
                             height={300}
                             borderRadius="rounded-xl"
                         />
-                    </div> 
+                    </div>
                     <span
                         key={1}
                         className="px-10 py-6 text-lg sm:text-xl rounded text-center sm:text-left"
                     >
-                        Hello there! I'm Shyamjith, a passionate Flutter developer hailing from the picturesque land of Kerala, India. With a background in computer science engineering, I thrive on turning innovative ideas into delightful digital experiences.{/* eslint-disable-line react/no-unescaped-entities */}
-                    </span>
-                </div>
+                        Hello there! I'm Shyamjith, a passionate Flutter developer hailing from the picturesque land of Kerala, India. With a background in computer science engineering, I thrive on turning innovative ideas into delightful digital experiences.
+                    </span> */}
+                {/* </div> */}
 
                 <DescriptionComponent
                     title="Continuos Learning"
@@ -40,7 +46,7 @@ export default function AboutPage() {
                     
                     Thank you for visiting my portfolio. Let's create amazing experiences together.
                     "
-                    
+
                 />
                 <div className="flex space-x-4 justify-center">
                     {/* Reach Out Button */}
@@ -50,7 +56,7 @@ export default function AboutPage() {
                     >
                         Reach out
                     </a>
-                    <div className="w=[10px]"/>
+                    <div className="w=[10px]" />
 
                     {/* Download CV Button with Hoverable Gradient */}
                     <a
