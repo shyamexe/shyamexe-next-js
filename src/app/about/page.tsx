@@ -11,6 +11,7 @@ export default function AboutPage() {
     return (
         <>
             <div className="max-w-[900px] mx-auto items-center space-y-4 sm:space-y-0 sm:space-x-10 px-4">
+                
                 <div className=" flex flex-col sm:flex-row items-center">
                     <div className="w-[300px]">
                         <RoundedImage
