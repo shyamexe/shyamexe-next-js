@@ -163,7 +163,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         // Animation for the card scale and fade-in effect
         if (cardRef.current) {
             gsap.fromTo(cardRef.current,
-                { scale: 0.9, opacity: 0 }, // Starting state
+                { scale: 0.9, opacity:0.6 }, // Starting state
                 {
                     scale: 1,
                     opacity: 1,
