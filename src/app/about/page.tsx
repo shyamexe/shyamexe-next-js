@@ -14,10 +14,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
     return (
         <CenteredImageWithBackground>
-
-            <NameCard />
-            <QuoteComponent />
-
+            <NameCard/>
+            <QuoteComponent/>
             <SkillsComponent
                 skills={
                     [
@@ -49,11 +47,9 @@ export default function AboutPage() {
                     ]
                 }
                 title="SKILLS"
-
             />
-
             <BlogTileList />
-            <AboutFooter/>
+            <AboutFooter />
 
 
             {/* <DescriptionComponent

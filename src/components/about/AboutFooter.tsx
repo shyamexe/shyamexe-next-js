@@ -14,7 +14,7 @@ const Footer: FC = () => {
   useEffect(() => {
     
     gsap.fromTo(
-      textRef.current, // Ensure the current DOM element is referenced
+      textRef.current,
       { opacity: 0, y: 50 },
       {
         opacity: 1,
@@ -26,13 +26,13 @@ const Footer: FC = () => {
             scrub: 3,
           trigger: textRef.current,
           start: 'top 90%',
-          toggleActions: 'play none none reverse', // Ensure the animation plays and reverses when scrolling back
+          toggleActions: 'play none none reverse',
         },
       }
     );
 
     gsap.fromTo(
-      buttonRef.current, // Ensure the current DOM element is referenced
+      buttonRef.current,
       { opacity: 0, scale: 0.8 },
       {
         opacity: 1,
@@ -43,12 +43,12 @@ const Footer: FC = () => {
             scrub: 1,
           trigger: buttonRef.current,
           start: 'top 90%',
-          toggleActions: 'play none none reverse', // Enable reverse animation on scroll up
+          toggleActions: 'play none none reverse',
         },
       }
     );
     
-    // Clean up ScrollTriggers on component unmount
+
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };

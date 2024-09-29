@@ -65,10 +65,10 @@ export default function InteractiveTitle() {
   return (
     <div ref={containerRef} className="flex-1 mb-6 md:mb-0 cursor-pointer perspective-500">
       <h1 ref={titleRef} className="text-5xl font-bold text-white mb-2">
-        Shyamjith VP
+        ShyamjithVP
       </h1>
       <h2 ref={subtitleRef} className="text-3xl sm:text-5xl font-light text-white">
-        Software Architect
+        SoftwareArchitect
       </h2>
     </div>
   )

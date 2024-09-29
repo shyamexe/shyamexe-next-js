@@ -14,7 +14,7 @@ const CenteredImageWithBackground = ({ children }: CenteredImageWithBackgroundPr
 
     const imageRef = useRef<HTMLDivElement>(null);
     const backgroundRef = useRef<HTMLImageElement>(null);
-    const childrenRef = useRef<HTMLDivElement>(null); // Ref for children
+    const childrenRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const el = backgroundRef.current;
@@ -25,46 +25,36 @@ const CenteredImageWithBackground = ({ children }: CenteredImageWithBackgroundPr
                 rotation: 0,
             }, {
                 rotation: 180,
-
-                scrollTrigger: { 
-                    trigger: triggerEl, // Trigger based on the children section
-                    start: "top 80%", // Start rotation when children reach 60% of the viewport height
+                scrollTrigger: {
+                    trigger: triggerEl,
+                    start: "top 60%",
                     end:"top 10%",
-                    scrub: 3, // Smoothly animates as you scroll 
+                    scrub: 3,
                 },
             });
         }
     }, []);
 
     return (
-        <div className="max-w-[1366px] mx-auto items-center space-y-4 sm:space-y-0 sm:space-x-10 px-4">
+        <div className="max-w-[1366px] mx-auto items-center space-y-0 sm:space-y-0 sm:space-x-10 px-4">
             <div className="relative flex justify-center items-center">
-                {/* Background Image with Specific Size */}
-
-
                 <Image
                     ref={backgroundRef}
-                    src="/rocker.png"
+                    src="/rocker-2.png"
                     alt="shyamjith background"
-                    width={949}  // Set the desired width
-                    height={949} // Set the desired height
-                // Optional: Uncomment if you want a transparent background
+                    width={550}
+                    height={550}
                 />
-
-
-
-                {/* Front Image */}
                 <div ref={imageRef} className="absolute inset-0 flex justify-center items-center">
                     <Image
                         src="/new_user.png"
                         alt="shyamjith"
-                        width={484}
-                        height={484}
-                        className="relative z-10" // Ensures it stays above the background
+                        width={300}
+                        height={300}
+                        className="relative z-10"
                     />
                 </div>
             </div>
-            {/* Children rendered below */}
             <div ref={childrenRef} className="mt-4">{children}</div>
         </div>
     );
