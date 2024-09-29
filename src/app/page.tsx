@@ -1,10 +1,12 @@
 import ProjectCard from "@/components/project_card";
 import RoundedImage from "@/components/rounded_image";
 import TypeWriterText from "@/components/type_writer_text"; 
+import Link from "next/link";
 export default function Home() {
   return (
     <div >
       <main className="flex   gap-8 row-start-2 items-center sm:items-start   box-border justify-center ">
+        <Link href="/about">
         <div className="flex flex-col sm:flex-row space-y-0 sm:space-x-10 box-border">
           <RoundedImage
             src="/avatar_normal.jpeg"
@@ -25,6 +27,7 @@ export default function Home() {
 
           </div>
         </div>
+          </Link>
 
       </main>
       <div>
