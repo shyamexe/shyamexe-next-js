@@ -40,13 +40,15 @@ export default function RootLayout({
             starColor={[255, 255, 255]}
             speedFactor={0.05}
             backgroundColor="black"
-            
+
           />
-          
+
           {/* Use the StickyAppBar component */}
           <StickyAppBar />
 
-          {children}
+          <div className="pt-[100px]">
+            {children}
+          </div>
 
           <div className="flex justify-end px-5 py-3 items-center">
             <span className="text-sm px-5">Say Hi!</span>

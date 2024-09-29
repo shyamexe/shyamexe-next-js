@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import TitleComponent from './TittleWidget';
 
-// Register the ScrollTrigger plugin
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer: FC = () => {
@@ -12,7 +12,7 @@ const Footer: FC = () => {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    // Animate the text when it scrolls into view
+    
     gsap.fromTo(
       textRef.current, // Ensure the current DOM element is referenced
       { opacity: 0, y: 50 },

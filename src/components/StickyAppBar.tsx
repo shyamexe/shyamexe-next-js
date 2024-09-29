@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import AppBarButton from "@/components/app_bar_button";
 import HoverIconButton from "@/components/hover_icon_button";
@@ -23,6 +23,8 @@ const StickyAppBar = () => {
 
   return (
     <div className="appbar sticky top-0 bg-black shadow-md z-50 p-4 flex space-x-4 justify-between">
+
+     {/* <div className="appbar fixed top-0 left-0 right-0 bg-transparent border-b  border-gray-300 z-50 p-4 flex space-x-4 justify-between"> */}
       <AppBarButton />
 
       <div className="flex">

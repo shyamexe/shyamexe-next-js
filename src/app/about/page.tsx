@@ -4,7 +4,6 @@ import CenteredImageWithBackground from "@/components/about/centered_image";
 import NameCard from "@/components/about/name_card";
 import QuoteComponent from "@/components/about/quote_component";
 import SkillsComponent from "@/components/about/SkilComponent";
-import DescriptionComponent from "@/components/description_component";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -49,7 +48,7 @@ export default function AboutPage() {
 
                     ]
                 }
-                title="My Skills"
+                title="SKILLS"
 
             />
 

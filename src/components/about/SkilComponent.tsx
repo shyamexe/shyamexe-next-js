@@ -14,7 +14,7 @@ interface SkillsComponentProps {
 const SkillsComponent: FC<SkillsComponentProps> = ({ skills, title }) => {
     return (
         <div >
-            <TitleComponent title='SKILLS' />
+            <TitleComponent title={title} />
             <p className=" leading-relaxed font-bold text-xl">
                 {skills.map((skill, index) => (
                     <span key={skill.id}>
