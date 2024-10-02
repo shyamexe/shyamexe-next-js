@@ -1,8 +1,10 @@
 "use client"
-import { useEffect, FC, useRef } from 'react';
+import {  FC, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import TitleComponent from './TittleWidget';
+import { useGSAP } from '@gsap/react';
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -11,7 +13,7 @@ const Footer: FC = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     
     gsap.fromTo(
       textRef.current,

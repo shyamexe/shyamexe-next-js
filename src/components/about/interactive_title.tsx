@@ -1,14 +1,15 @@
 "use client"
 
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react';
 
 export default function InteractiveTitle() {
   const titleRef = useRef<HTMLHeadingElement>(null)
   const subtitleRef = useRef<HTMLHeadingElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
+  useGSAP(() => {
     if (titleRef.current && subtitleRef.current && containerRef.current) {
       const title = titleRef.current
       const subtitle = subtitleRef.current

@@ -1,13 +1,14 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef } from 'react'
 import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
 
 export default function SlowRevealParagraph() {
   const paragraphRef = useRef<HTMLParagraphElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
+  useGSAP(() => {
     if (paragraphRef.current && containerRef.current) {
       const words = paragraphRef.current.innerText.split(' ')
       paragraphRef.current.innerHTML = words.map(word => `<span class="inline-block">${word}</span>`).join(' ')
@@ -17,7 +18,7 @@ export default function SlowRevealParagraph() {
           trigger: containerRef.current,
           start: "top bottom-=100px",
           end: "bottom top+=100px",
-          toggleActions: "play none play none"
+          toggleActions: "play none none reverse"
         }
       })
 

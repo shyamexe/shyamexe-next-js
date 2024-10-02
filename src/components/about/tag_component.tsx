@@ -1,7 +1,8 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef } from 'react'
 import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react';
 
 export default function CoolTags() {
   const tagsRef = useRef<(HTMLSpanElement | null)[]>([])
@@ -12,7 +13,7 @@ export default function CoolTags() {
     }
   }
 
-  useEffect(() => {
+  useGSAP(() => {
     tagsRef.current.forEach((tag) => {
       if (tag) {
         gsap.set(tag, { scale: 1, backgroundColor: 'transparent', color: 'white' })

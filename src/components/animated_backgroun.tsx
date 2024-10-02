@@ -38,6 +38,7 @@
 
 
 import { useState, useEffect } from "react";
+import { useGSAP } from '@gsap/react';
 
 interface BackgroundAnimationProps {
   imageUrl: string;
@@ -48,7 +49,7 @@ const BackgroundAnimation: React.FC<BackgroundAnimationProps> = ({ imageUrl }) =
   const [mouseY, setMouseY] = useState(0);
   const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
+  useGSAP(() => {
     // Track mouse movement
     const handleMouseMove = (event: MouseEvent) => {
       setMouseX(event.clientX / window.innerWidth);

@@ -1,8 +1,9 @@
 "use client"
 import Image from 'next/image';
-import { useEffect, useRef, ReactNode } from 'react';
+import {   useRef, ReactNode } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +17,7 @@ const CenteredImageWithBackground = ({ children }: CenteredImageWithBackgroundPr
     const backgroundRef = useRef<HTMLImageElement>(null);
     const childrenRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
+    useGSAP(() => {
         const el = backgroundRef.current;
         const triggerEl = childrenRef.current;
 

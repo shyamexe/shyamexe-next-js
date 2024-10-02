@@ -2,9 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     const cardRef = useRef<HTMLDivElement>(null);
     const imageRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
+    useGSAP(() => {
         // Animation for the card scale and fade-in effect
         if (cardRef.current) {
             gsap.fromTo(cardRef.current,

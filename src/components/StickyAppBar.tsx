@@ -1,15 +1,15 @@
-"use client";
-import React, { useEffect } from "react";
+"use client"; 
 import AppBarButton from "@/components/app_bar_button";
 import HoverIconButton from "@/components/hover_icon_button";
 import { FaInstagram, FaGithub } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const StickyAppBar = () => {
-  useEffect(() => {
+  useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".appbar",
