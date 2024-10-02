@@ -2,6 +2,7 @@ import ExternalLink from '@/components/project_link_card'
 import { items } from './data'
 import { Metadata } from 'next'
 import MarkdownRenderer from '@/components/markdown_renderer' 
+import { notFound } from 'next/navigation'
 
 type Props = {
   params: { id: string }
@@ -14,9 +15,7 @@ export async function generateMetadata(
   const item = items.find(item => item.id === id)
 
   if (!item) {
-    return {
-      title: 'Item Not Found',
-    }
+    return    notFound();
   }
 
   return {

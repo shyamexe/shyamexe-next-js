@@ -37,7 +37,7 @@
 // export default AnimatedBackground;
 
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useGSAP } from '@gsap/react';
 
 interface BackgroundAnimationProps {

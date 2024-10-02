@@ -25,7 +25,7 @@ const Footer: FC = () => {
         ease: 'power4.out',
         
         scrollTrigger: {
-            scrub: 3,
+            scrub: 1,
           trigger: textRef.current,
           start: 'top 90%',
           toggleActions: 'play none none reverse',
