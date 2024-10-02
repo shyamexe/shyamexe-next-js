@@ -47,35 +47,27 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import TitleComponent from './TittleWidget';
+import Link from 'next/link';
 
 interface BlogPost {
   id: number;
   date: string;
   title: string;
   imageUrl: string;
+  url: string;
 }
 
 gsap.registerPlugin(ScrollTrigger);
 
 const BlogTileList: React.FC = () => {
   const blogPosts: BlogPost[] = [
-    { id: 1, date: 'September 29, 2024', title: 'Understanding Next.js and Tailwind CSS', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 2, date: 'September 28, 2024', title: 'Getting Started with Flutter', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 3, date: 'September 27, 2024', title: 'Deploying Your Web App', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 1, date: 'September 29, 2024', title: 'Understanding Next.js and Tailwind CSS', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 2, date: 'September 28, 2024', title: 'Getting Started with Flutter', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 3, date: 'September 27, 2024', title: 'Deploying Your Web App', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 1, date: 'September 29, 2024', title: 'Understanding Next.js and Tailwind CSS', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 2, date: 'September 28, 2024', title: 'Getting Started with Flutter', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 1, date: 'September 29, 2024', title: 'Understanding Next.js and Tailwind CSS', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 2, date: 'September 28, 2024', title: 'Getting Started with Flutter', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 3, date: 'September 27, 2024', title: 'Deploying Your Web App', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 1, date: 'September 29, 2024', title: 'Understanding Next.js and Tailwind CSS', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 2, date: 'September 28, 2024', title: 'Getting Started with Flutter', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 3, date: 'September 27, 2024', title: 'Deploying Your Web App', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 1, date: 'September 29, 2024', title: 'Understanding Next.js and Tailwind CSS', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 2, date: 'September 28, 2024', title: 'Getting Started with Flutter', imageUrl: 'https://via.placeholder.com/421x350' },
-    { id: 3, date: 'September 27, 2024', title: 'Deploying Your Web App', imageUrl: 'https://via.placeholder.com/421x350' },
+    { id: 1, date: 'October 3, 2024', title: 'A Practical Guide to the BLoC Pattern in Flutter with Testing', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*qxJheSwo06d1l7Yxb985_A.png', url:'https://medium.com/@1shyam2shyam/a-practical-guide-to-the-bloc-pattern-in-flutter-with-testing-c88c0cd8973f'},
+    { id: 2, date: 'September 28, 2024', title: 'A Comprehensive Guide to App Routing in Next.js', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*y9wZf7p9uSknsZ1rpJiRiQ.png', url:'https://medium.com/@1shyam2shyam/a-comprehensive-guide-to-app-routing-in-next-js-b769a3e500c4'},
+    { id: 1, date: 'October 3, 2024', title: 'A Practical Guide to the BLoC Pattern in Flutter with Testing', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*qxJheSwo06d1l7Yxb985_A.png', url:'https://medium.com/@1shyam2shyam/a-practical-guide-to-the-bloc-pattern-in-flutter-with-testing-c88c0cd8973f'},
+    { id: 2, date: 'September 28, 2024', title: 'A Comprehensive Guide to App Routing in Next.js', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*y9wZf7p9uSknsZ1rpJiRiQ.png', url:'https://medium.com/@1shyam2shyam/a-comprehensive-guide-to-app-routing-in-next-js-b769a3e500c4'},
+    { id: 1, date: 'October 3, 2024', title: 'A Practical Guide to the BLoC Pattern in Flutter with Testing', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*qxJheSwo06d1l7Yxb985_A.png', url:'https://medium.com/@1shyam2shyam/a-practical-guide-to-the-bloc-pattern-in-flutter-with-testing-c88c0cd8973f'},
+    { id: 2, date: 'September 28, 2024', title: 'A Comprehensive Guide to App Routing in Next.js', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*y9wZf7p9uSknsZ1rpJiRiQ.png', url:'https://medium.com/@1shyam2shyam/a-comprehensive-guide-to-app-routing-in-next-js-b769a3e500c4'},
+   
   ];
 
   const horizontalScrollRef = useRef<HTMLDivElement>(null);
@@ -114,12 +106,13 @@ const BlogTileList: React.FC = () => {
         style={{ width: `${blogPosts.length * 421}px` }} // Dynamic width based on content
       >
         {blogPosts.map((post) => (
-          <div key={post.id} className="flex-none w-[421px]">
+         <Link href={post.url} target='_blank' key={post.url}>
+           <div key={post.id} className="flex-none w-[421px]">
             <div className="relative rounded-lg overflow-hidden bg-transparent">
               <img 
                 src={post.imageUrl} 
                 alt={post.title} 
-                className="w-[421px] h-[350px] object-cover rounded-lg" 
+                className="w-[421px] h-[350px] object-cover bg-white rounded-lg" 
               />
               <div className="pt-2 pb-4">
                 <span className="block text-sm text-gray-500">{post.date}</span>
@@ -127,6 +120,7 @@ const BlogTileList: React.FC = () => {
               </div>
             </div>
           </div>
+         </Link>
         ))}
       </div>
 
