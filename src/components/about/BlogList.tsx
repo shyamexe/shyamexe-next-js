@@ -47,7 +47,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import TitleComponent from './TittleWidget';
-import Image from 'next/image';
 
 interface BlogPost {
   id: number;
@@ -117,7 +116,7 @@ const BlogTileList: React.FC = () => {
         {blogPosts.map((post) => (
           <div key={post.id} className="flex-none w-[421px]">
             <div className="relative rounded-lg overflow-hidden bg-transparent">
-              <Image 
+              <img 
                 src={post.imageUrl} 
                 alt={post.title} 
                 className="w-[421px] h-[350px] object-cover rounded-lg" 
@@ -136,7 +135,7 @@ const BlogTileList: React.FC = () => {
         {blogPosts.map((post) => (
           <div key={post.id} className="w-full">
             <div className="relative rounded-lg overflow-hidden bg-transparent">
-              <Image 
+              <img 
                 src={post.imageUrl} 
                 alt={post.title} 
                 className="w-full h-[350px] object-cover rounded-lg" 
