@@ -61,13 +61,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const BlogTileList: React.FC = () => {
   const blogPosts: BlogPost[] = [
-    { id: 1, date: 'October 3, 2024', title: 'A Practical Guide to the BLoC Pattern in Flutter with Testing', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*qxJheSwo06d1l7Yxb985_A.png', url:'https://medium.com/@1shyam2shyam/a-practical-guide-to-the-bloc-pattern-in-flutter-with-testing-c88c0cd8973f'},
+    { id: 1, date: 'October 2, 2024', title: 'A Practical Guide to the BLoC Pattern in Flutter with Testing', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*qxJheSwo06d1l7Yxb985_A.png', url:'https://medium.com/@1shyam2shyam/a-practical-guide-to-the-bloc-pattern-in-flutter-with-testing-c88c0cd8973f'},
     { id: 2, date: 'September 28, 2024', title: 'A Comprehensive Guide to App Routing in Next.js', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*y9wZf7p9uSknsZ1rpJiRiQ.png', url:'https://medium.com/@1shyam2shyam/a-comprehensive-guide-to-app-routing-in-next-js-b769a3e500c4'},
-    { id: 1, date: 'October 3, 2024', title: 'A Practical Guide to the BLoC Pattern in Flutter with Testing', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*qxJheSwo06d1l7Yxb985_A.png', url:'https://medium.com/@1shyam2shyam/a-practical-guide-to-the-bloc-pattern-in-flutter-with-testing-c88c0cd8973f'},
-    { id: 2, date: 'September 28, 2024', title: 'A Comprehensive Guide to App Routing in Next.js', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*y9wZf7p9uSknsZ1rpJiRiQ.png', url:'https://medium.com/@1shyam2shyam/a-comprehensive-guide-to-app-routing-in-next-js-b769a3e500c4'},
-    { id: 1, date: 'October 3, 2024', title: 'A Practical Guide to the BLoC Pattern in Flutter with Testing', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*qxJheSwo06d1l7Yxb985_A.png', url:'https://medium.com/@1shyam2shyam/a-practical-guide-to-the-bloc-pattern-in-flutter-with-testing-c88c0cd8973f'},
-    { id: 2, date: 'September 28, 2024', title: 'A Comprehensive Guide to App Routing in Next.js', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*y9wZf7p9uSknsZ1rpJiRiQ.png', url:'https://medium.com/@1shyam2shyam/a-comprehensive-guide-to-app-routing-in-next-js-b769a3e500c4'},
-   
+    { id: 3, date: 'October 3, 2024', title: 'Next.js Route Handlers in TypeScript: Comprehensive Guide', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*8tLkaL5EG0Jc9xIz1NY9zA.png', url:'https://medium.com/@1shyam2shyam/next-js-route-handlers-in-typescript-comprehensive-guide-ee3c9ea773b8'},
+    { id: 4, date: 'October 3, 2024', title: 'Next.js Rendering: A Deep Dive', imageUrl: 'https://cdn-images-1.medium.com/max/800/1*htU06RotX9OO1ai6I0RIbw.png', url:'https://medium.com/@1shyam2shyam/next-js-rendering-a-deep-dive-e2a2d6701672'},
+    { id: 5, date: 'October 3, 2024', title: 'Next.js Data Fetching: Complete Guide', imageUrl: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*CLfxHCCH3RQrYp1l-kd7OQ.gif', url:'https://medium.com/@1shyam2shyam/next-js-data-fetching-complete-guide-273bb668567b'},
+    { id: 6, date: 'October 3, 2024', title: 'Using GSAP with Next.js: A Guide to Animations', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*mwBTI6QKucGdsjaqHIXX7g.jpeg', url:'https://medium.com/@1shyam2shyam/using-gsap-with-next-js-a-guide-to-animations-bc5b832a70f0'},
+    { id: 7, date: 'October 3, 2024', title: 'Introducing MaterialPagination: A Customizable Flutter Pagination Widget', imageUrl: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*rAEkZJB8IQLSw5TWscuReQ.png', url:'https://medium.com/@1shyam2shyam/introducing-materialpagination-a-customizable-flutter-pagination-widget-9cf3d2003c6c'},
+    { id: 8, date: 'October 3, 2024', title: 'Mastering Flutter Animations: A Guide to Creating Stunning Motion in Your Apps', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*mzACT7PaKfJdj5g4ugNMig.png', url:'https://medium.com/@1shyam2shyam/mastering-flutter-animations-a-guide-to-creating-stunning-motion-in-your-apps-0b7394cab953'},
   ];
 
   const horizontalScrollRef = useRef<HTMLDivElement>(null);
@@ -91,6 +92,7 @@ const BlogTileList: React.FC = () => {
           pin: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
+          
         },
       });
     }
