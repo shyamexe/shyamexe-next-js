@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Starfield from "react-starfield";
 import Link from "next/link";
 import BackgroundAnimation from "@/components/animated_backgroun";
 import StickyAppBar from "@/components/StickyAppBar";
