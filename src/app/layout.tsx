@@ -5,7 +5,7 @@ import Starfield from "react-starfield";
 import Link from "next/link";
 import BackgroundAnimation from "@/components/animated_backgroun";
 import StickyAppBar from "@/components/StickyAppBar";
-
+import SmoothScrolling from "@/components/SmoothScrolling";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <>
+        <SmoothScrolling>
           <BackgroundAnimation imageUrl="/bg3.jpg" />
           <Starfield
             starCount={2000}
@@ -58,6 +59,7 @@ export default function RootLayout({
               Reach out
             </Link>
           </div>
+          </SmoothScrolling>
         </>
       </body>
     </html>

@@ -68,7 +68,6 @@ const BlogTileList: React.FC = () => {
     { id: 5, date: 'October 3, 2024', title: 'Next.js Data Fetching: Complete Guide', imageUrl: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*CLfxHCCH3RQrYp1l-kd7OQ.gif', url:'https://medium.com/@1shyam2shyam/next-js-data-fetching-complete-guide-273bb668567b'},
     { id: 6, date: 'October 3, 2024', title: 'Using GSAP with Next.js: A Guide to Animations', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*mwBTI6QKucGdsjaqHIXX7g.jpeg', url:'https://medium.com/@1shyam2shyam/using-gsap-with-next-js-a-guide-to-animations-bc5b832a70f0'},
     { id: 7, date: 'October 3, 2024', title: 'Introducing MaterialPagination: A Customizable Flutter Pagination Widget', imageUrl: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*rAEkZJB8IQLSw5TWscuReQ.png', url:'https://medium.com/@1shyam2shyam/introducing-materialpagination-a-customizable-flutter-pagination-widget-9cf3d2003c6c'},
-    { id: 8, date: 'October 3, 2024', title: 'Mastering Flutter Animations: A Guide to Creating Stunning Motion in Your Apps', imageUrl: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*mzACT7PaKfJdj5g4ugNMig.png', url:'https://medium.com/@1shyam2shyam/mastering-flutter-animations-a-guide-to-creating-stunning-motion-in-your-apps-0b7394cab953'},
   ];
 
   const horizontalScrollRef = useRef<HTMLDivElement>(null);

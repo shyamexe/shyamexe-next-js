@@ -72,7 +72,7 @@ const Footer: FC = () => {
       >
         Schedule a call →
       </button>
-      <p className="text-sm text-gray-400 mt-8">
+      <p className="text-sm text-gray-400 mt-8 mb-14">
         © 2024 Designed by Dilshad Kallai
       </p>
     </footer>
