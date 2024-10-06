@@ -6,6 +6,7 @@ import Link from "next/link";
 import BackgroundAnimation from "@/components/animated_backgroun";
 import StickyAppBar from "@/components/StickyAppBar";
 import SmoothScrolling from "@/components/SmoothScrolling";
+import StarryBackground from "@/components/StarryBackground";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,14 +37,14 @@ export default function RootLayout({
         <>
         <SmoothScrolling>
           <BackgroundAnimation imageUrl="/bg3.jpg" />
-          <Starfield
+          {/* <Starfield
             starCount={2000}
             starColor={[255, 255, 255]}
             speedFactor={0.01}
             backgroundColor="black"
 
-          />
-
+          /> */}
+          <StarryBackground />
           {/* Use the StickyAppBar component */}
           <StickyAppBar />
 
