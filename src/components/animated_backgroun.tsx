@@ -83,7 +83,7 @@ const BackgroundAnimation: React.FC<BackgroundAnimationProps> = ({ imageUrl }) =
         backgroundRepeat: "no-repeat",
         transform: `translate(${mouseX * 15}px, ${Math.max(0, mouseY * 30 + scrollY * 0.05)}px)`, // Adjust transform values for smoother animation
         transition: "transform 0.1s ease-out", // Smooth transition for movement
-        opacity: 0.40, // 20% opacity for transparency
+        opacity: 0.30, // 20% opacity for transparency
         zIndex: -1, // Behind content
       }}
     ></div>

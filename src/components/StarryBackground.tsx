@@ -32,16 +32,16 @@ export default function StarryBackground() {
     window.addEventListener('resize', resizeCanvas)
 
     const stars: Star[] = []
-    const starCount = 200
+    const starCount = 600 // Increased from 200 to 1000
 
     const createStar = (): Star => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      radius: Math.random() * 2 + 0.5,
-      color: `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.5})`,
-      speedX: (Math.random() - 0.5) * 0.2,
+      radius: Math.random() * 1.5 + 0.4, // Adjusted size range for better visibility
+      color: `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.3})`, // Increased minimum opacity
+      speedX: (Math.random() - 0.5) * 0.2, // Reduced speed for smoother movement
       speedY: (Math.random() - 0.5) * 0.2,
-      twinkleSpeed: Math.random() * 0.05 + 0.01,
+      twinkleSpeed: Math.random() * 0.03 + 0.01,
       twinklePhase: Math.random() * Math.PI * 2
     })
 
@@ -61,7 +61,7 @@ export default function StarryBackground() {
           Object.assign(star, createStar())
         }
 
-        const twinkle = Math.sin(star.twinklePhase) * 0.5 + 0.5
+        const twinkle = Math.sin(star.twinklePhase) * 0.3 + 0.7 // Adjusted for subtler twinkling
         const alpha = parseFloat(star.color.split(',')[3]) * twinkle
 
         ctx.beginPath()

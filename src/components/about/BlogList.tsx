@@ -133,7 +133,7 @@ const BlogTileList: React.FC = () => {
               <img 
                 src={post.imageUrl} 
                 alt={post.title} 
-                className="w-full h-[350px] object-cover rounded-lg" 
+                className="w-full h-[350px] object-cover  bg-white  rounded-lg" 
               />
               <div className="pt-2 pb-4">
                 <span className="block text-sm text-gray-500">{post.date}</span>

@@ -14,7 +14,7 @@ const StickyAppBar = () => {
       scrollTrigger: {
         trigger: ".appbar",
         start: "top top",
-        toggleActions: "play none none reverse",
+        toggleActions: "play none none none",
       },
     });
 

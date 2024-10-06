@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         <>
         <SmoothScrolling>
-          <BackgroundAnimation imageUrl="/bg3.jpg" />
+          <BackgroundAnimation imageUrl="/bg4.jpg" />
           {/* <Starfield
             starCount={2000}
             starColor={[255, 255, 255]}
